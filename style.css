@@ -12,56 +12,153 @@ body {
 header {
     width: 100%;
     height: 10vh;
-    background-color: dimgray;
+    background-color: rgb(65, 64, 64);
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-    width: 15vh;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
 }
 
+.logo img {
+    width: 10vh;
+}
+
+
 h1 {
+    font-size: 2.5vh;
     color: white;
 }
 
-nav {
 
+nav a {
+    padding-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hover-text1 {
+    color: slategrey;
+}
+
+.hover-text2 {
+    color: green;
+    padding-right: 100px;
+}
+
+.portada {
+    width: 100%;
+    height: 80vh;
+    background-image: url(./assets/hawaii.jpg);
+    background-color: rgb(53, 52, 52);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-portada {
+    width: 30%;
+    color: white;
+    text-align: right;
+    margin-left: 50%;
+    position: absolute;
+}
+
+.portada button {
+    color: white;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.button-portada1 {
+    background-color: transparent;
+    border-color: white;
+}
+
+.button-portada2 {
+    background-color: rgb(4, 182, 4);
 }
 
 main {
     width: 100%;
 }
 
-.portada {
-    display: flex;
+h2, h5 {
+    text-align: center;
+    margin: 10px;
 }
 
-.portada {
+
+
+.container-oradores {
     width: 100%;
-}
-
-.img-portada {
-    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
     
 }
 
-.text-portada {
-    width: 50%;
+.orador {
+    width: 250px;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 5px;
 }
 
-.container-oradores {
-    display: flex;
+h4, h6 {
+    margin-left: 10px;
+    border-radius: 2px;
+    margin-top: 3px;
 }
 
-.img-oradores {
-    width: 25vh;
+.h6-js {
+    width: 60px;
+    background-color: rgb(255, 187, 0);
+    padding: 3px;
 }
+
+.h6-react {
+    width: 35px;
+    color: white;
+    background-color: rgb(7, 155, 192);
+    padding: 3px;
+}
+
+.h6-negocios {
+    width: 55px;
+    color: white;
+    background-color: rgb(92, 93, 94);
+    padding: 3px;
+}
+
+.h6-startups {
+    width: 50px;
+    color: white;
+    background-color: rgb(226, 12, 12);
+    padding: 3px;
+}
+
+.orador p {
+    color: rgb(82, 79, 79);
+    margin: 10px;
+    text-align: left;
+}
+
 
 .container-bsas-octubre {
     width: 100%;
     display: flex;
-    background-color: dimgray;
-
+    background-color: rgb(65, 64, 64);
 }
 
 .img-honolulu {
@@ -71,17 +168,74 @@ main {
 
 .text-bsas-octubre {
     width: 50%;
+    color: white;
+    margin-left: 30px;
+}
+
+.text-bsas-octubre h2 {
+    text-align: left;
+    margin-left: -2px;
+}
+
+.text-bsas-octubre button {
+    margin-top: 10px;
+    padding: 5px;
+    color: white;
+    background-color: transparent;
+    border: 0.5px solid white;
+    border-radius: 3px;
 }
 
 form {
     width: 100%;
-    height: 30vh;
     text-align: center;
+    margin-bottom: 20px;
+}
+
+form p {
+    font-size: 12px;
+}
+
+form a {
+    color: black;
+    text-decoration: underline;
+}
+
+.datos-form1 {
+    width: 250px;
+    margin-top: 5px;
+}
+
+.datos-form2 {
+    width: 505px;
+    height: 100px;
+    margin-top: 5px;
+}
+
+.text-comentario-form {
+    margin-right: 290px;
+    margin-bottom: 5px;
+}
+
+form button {
+    width: 500px;
+    color: white;
+    background-color: rgb(112, 214, 9);
+    padding: 5px;
+    border-color: transparent;
+    border-radius: 3px;
 }
 
 footer {
     width: 100%;
     height: 10vh;
     background-color: darkslategray;
+    text-align: center;
+    padding-top: 25px;
+    
+}
+
+footer a {
+    padding: 30px;
     
 }

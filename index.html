@@ -12,59 +12,59 @@
   <body>
 
     <header>
-      <img class="logo" src="./assets/codoacodo.png" alt="logo-codo-a-codo">
-      <h1 class="titullo">Conf Bs As</h1>
+      <div class="logo"> 
+        <img src="./assets/codoacodo.png" alt="logo-codo-a-codo" >
+        <h1>Conf Bs As</h1>
+      </div>
       <nav class="nav">
         <a href="http://">La conferencia</a>
-        <a href="http://">Los oradores</a> 
-        <a href="http://">El lugar y la fecha</a> 
-        <a href="http://">Conviértete en orador</a> 
-        <a href="http://">Comprar tickets</a>     
+        <a class="hover-text1" href="http://">Los oradores</a> 
+        <a class="hover-text1" href="http://">El lugar y la fecha</a> 
+        <a class="hover-text1" href="http://">Conviértete en orador</a> 
+        <a class="hover-text2" href="http://">Comprar tickets</a>     
       </nav>
     </header>
 
-    <main>
-      <div class="portada">
-        <div class="img-portada">
-          <img src="./assets/hawaii.jpg" alt="imagen-portada">
-        </div>
-        <div class="text-portada">  
-          <h2>Conf Bs As</h2>
-          <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimeinto y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-          <button>Quiero ser orador</button>
-          <button>Comprar tickets</button>
-        </div>   
-      </div>
+    <div class="portada">
+      <div class="text-portada">  
+        <h2>Conf Bs As</h2>
+        <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimeinto y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+        <button class="button-portada1">Quiero ser orador</button>
+        <button class="button-portada2">Comprar tickets</button>
+      </div>   
+    </div>
 
+    <main>
       <div class="oradores">
         <h5>CONOCE A LOS</h5>
         <h2>ORADORES</h2>
         
       <div class="container-oradores">   
-        <div>
-          <img class="img-oradores" src="./assets/steve.jpg" alt="steve-jobs">
-          <button></button>
-          <button></button>
+        <div class="orador">
+          <img class="img-oradores" src="./assets/steve.jpg" alt="steve-jobs" width="250px" height="200px">
+          <h6 class="h6-js">JavaScript</h6>
+          <h6 class="h6-react">React</h6>
           <h4>Steve Jobs</h4>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt unde expedita assumenda ipsa error magnam eius deleniti voluptatibus esse perspiciatis libero quasi, facere hic debitis consequuntur asperiores odio aspernatur provident.</p>
       </div>
       
-      <div>
-        <img class="img-oradores" src="./assets/bill.jpg" alt="bill-gates">
-        <button></button>
-        <button></button>
+      <div class="orador">
+        <img class="img-oradores" src="./assets/bill.jpg" alt="bill-gates" width="250px" height="200px">
+        <h6 class="h6-js">JavaScript</h6>
+        <h6 class="h6-react">React</h6>
         <h4>Bill Gates</h4>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit maiores autem minima explicabo culpa! Aliquam, nostrum impedit ea deserunt nisi velit a maiores ex molestiae modi commodi molestias et inventore?</p>
       </div>
       
-      <div>
-        <img class="img-oradores" src="./assets/ada.jpeg" alt="ada-lovelace">
-        <button></button>
-        <button></button>
+      <div class="orador">
+        <img class="img-oradores" src="./assets/ada.jpeg" alt="ada-lovelace" width="250px" height="200px">
+        <h6 class="h6-negocios">Negocios</h6>
+        <h6 class="h6-startups">Startups</h6>
         <h4>Ada Lovelace</h4>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis doloribus quas corporis consequatur maxime possimus laboriosam eius unde dolor harum temporibus laudantium perspiciatis eligendi sit, porro facere autem dolorum veniam!</p>
       </div>
     </div>
+
       <div class="container-bsas-octubre">
         
         <img class="img-honolulu" src="./assets/honolulu.jpg" alt="honolulu">
@@ -80,12 +80,12 @@
     <form action="/enviar-respuesta">
       <h5>CONVIERTETE EN UN</h5>
       <h2>ORADOR</h2>
-      <p>Anótate como orador para dar una charla ignite. Cuéntenos de qué quieres hablar!</p>
-      <input type="text" id="nombre" placeholder="Nombre" required>
-      <input type="text" id="apellido" placeholder="Apellido" required>
+      <p>Anótate como orador para dar una <a href="http://">charla ignite</a>. Cuéntenos de qué quieres hablar!</p>
+      <input class="datos-form1" type="text" id="nombre" placeholder="Nombre" required>
+      <input class="datos-form1" type="text" id="apellido" placeholder="Apellido" required>
       <br>
-      <label for="comentario"><input type="text" id="comentario" placeholder="Sobre qué quieres hablar?" required>
-      <br>Recuerda incluir un título para tu charla</label>
+      <label for="comentario"><input class="datos-form2" type="text" id="comentario" placeholder="Sobre qué quieres hablar?" required>
+      <br><p class="text-comentario-form">Recuerda incluir un título para tu charla</p></label>
       <button type="submit">Enviar</button>
     </form>
 
