@@ -203,13 +203,18 @@ form a {
 
 .datos-form1 {
     width: 250px;
+    height: 30px;
     margin-top: 5px;
+    border: 1px solid rgb(194, 186, 186);
+    border-radius: 3px;
 }
 
 .datos-form2 {
     width: 505px;
     height: 100px;
     margin-top: 5px;
+    border: 1px solid rgb(194, 186, 186);
+    border-radius: 3px;
 }
 
 .text-comentario-form {
@@ -238,4 +243,79 @@ footer {
 footer a {
     padding: 30px;
     
+}
+
+/* CSS DE TICKETS.HTML */
+
+.descuentos {
+    height: 140px;
+    margin-top: 25px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.descuentos p {
+    padding-top: 15px;
+}
+
+.datos-form3 {
+    width: 505px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10PX;
+    border: 1px solid rgb(194, 186, 186);
+    border-radius: 3px;
+}
+
+.form-label {
+   margin-left: -14%;
+   color: rgb(43, 42, 42);
+   font-size: 14px;
+}
+
+.form-label2 {
+    margin-left: 14.5%;
+    color: rgb(43, 42, 42);
+    font-size: 14px;
+}
+
+ .datos-cantidad {
+    width: 250px;
+    height: 30px;
+    margin-top: 5px;
+    border: 1px solid rgb(194, 186, 186);
+    border-radius: 3px;
+ }
+
+.select {
+    width: 250px;
+    height: 30px;
+    margin-top: 5px;
+    border: 1px solid rgb(194, 186, 186);
+    border-radius: 3px;   
+} 
+
+.total-a-pagar {
+    width: 37%;
+    height: 35;
+    margin-left: 425px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgb(144, 208, 219);
+    border-radius: 3px;
+    text-align: left;
+    color: rgb(4, 57, 126);
+    border: transparent;
+}
+
+.button-tickets {
+    width: 18.5%;
+    height: 35px;
+    margin-bottom: 10px;
+    background-color: rgb(4, 182, 4);
+    border-color: transparent;
+    border-radius: 3px;
+    color: white;
 }

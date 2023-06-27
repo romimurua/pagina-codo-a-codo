@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto CAC</title>
+    <link rel="shortcut icon" href="./assets/codoacodo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/functions.js"></script>
+  </head>
+  <!--Salto de línea: <br> -->
+  <body>
+
+    <header>
+      <div class="logo"> 
+        <img src="./assets/codoacodo.png" alt="logo-codo-a-codo" >
+        <h1>Conf Bs As</h1>
+      </div>
+      <nav class="nav">
+        <a href="index.html">La conferencia</a>
+        <a class="hover-text1" href="http://">Los oradores</a> 
+        <a class="hover-text1" href="http://">El lugar y la fecha</a> 
+        <a class="hover-text1" href="http://">Conviértete en orador</a> 
+        <a class="hover-text2" href="tickets.html">Comprar tickets</a>     
+      </nav>
+    </header>
+
+    <main>
+      <div class="oradores">
+        
+      <div class="container-oradores">   
+        <div class="descuentos">
+          <h4>Estudiante</h4>
+          <p>Tienen un descuento</p>
+          <h5>80%</h5>
+          <h6>* presentar documentación</h6>
+      </div>
+      
+      <div class="descuentos">
+        <h4>Trainee</h4>
+        <p>Tienen un descuento</p>
+        <h5>50%</h5>
+        <h6>* presentar documentación</h6>
+    </div>
+
+    <div class="descuentos">
+        <h4>Junior</h4>
+        <p>Tienen un descuento</p>
+        <h5>15%</h5>
+        <h6>* presentar documentación</h6>
+    </div>
+
+    </div>
+
+    </main>
+
+    <form action="/enviar-respuesta">
+      <h5>VENTA</h5>
+      <h2>VALOR DE TICKET $200</h2>
+      <input class="datos-form1" type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+      <input class="datos-form1" type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+      <br>
+      <input class="datos-form3" type="text" id="correo" name="correo" placeholder="Correo" required>
+      <br>
+      <label class="form-label" for="cantidad">Cantidad</label>
+      <label class="form-label2" for="categoria">Categoría</label>
+      <br>
+      <input class="datos-cantidad" type="number" id="cantidad" name="cantidad" placeholder="Cantidad" required id="error" name="error">
+      <select class="select" id="categoria" >
+        <option selected value="1">Estudiantes</option>
+        <option value="2">Trainee</option>
+        <option value="3">Junior</option>
+      </select>
+      <br> 
+      <div class="total-a-pagar" > Total a Pagar: $ <b id="total" name="total"></b><b id="error" name="error" ></b> </div>
+      <br>
+      <button class="button-tickets" type="button" onclick="borrar();">Borrar</button> 
+      <button class="button-tickets" type="button" onclick="calcular();">Resumen</button>
+    </form>
+
+    <footer>
+      <nav class="nav-footter">
+        <a href="http://">Preguntas frecuentes</a>
+        <a href="http://">Contáctanos</a>
+        <a href="http://">Prensa</a>
+        <a href="http://">Conferencias</a>
+        <a href="http://">Términos y condiciones</a>
+        <a href="http://">Privacidad</a>
+        <a href="http://">Estudiantes</a>
+      </nav>
+    </footer>
+      
+  </body>
+</html>
+
+
